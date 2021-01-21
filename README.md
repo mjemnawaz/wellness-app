@@ -1,6 +1,6 @@
-# wellnessapp
+# Wellness App
 
-A Fultter application for breathing exercises and other wellness activities.
+Personal project. A Fultter application for breathing exercises and other wellness activities.
 
 ## Getting Started
 
