@@ -28,13 +28,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   changeTheme({int newTheme}){
-    if (newTheme == null)
-      widget.theme.setTheme((widget.theme.getTheme()+1)%widget.theme.numTheme());
-    else
-      widget.theme.setTheme(newTheme);
-    debugPrint("COUNTED");
+    debugPrint("changeTheme()");
     setState(() {
-
+      if (newTheme == null)
+        widget.theme.setTheme((widget.theme.getTheme()+1)%widget.theme.numTheme());
+      else
+        widget.theme.setTheme(newTheme);
     });
   }
 
@@ -56,7 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
-        onTap: changeTheme(),
+        onTap: () {
+          debugPrint("body:GestureDetector:onTap()");
+          changeTheme();
+        },
       ),
     );
   }

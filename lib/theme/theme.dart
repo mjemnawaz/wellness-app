@@ -24,11 +24,12 @@ class Theme {
   }
 
   Color getTopBG(){
-    debugPrint("getting top bg when we are at : " + themeIdentifier.toString());
+    debugPrint("getTopBG()");
     return THEME_MAP[themeIdentifier][0];
   }
 
   Color getBotBG(){
+    debugPrint("getBotBG()");
     return THEME_MAP[themeIdentifier][1];
   }
 }
