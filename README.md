@@ -1,6 +1,8 @@
 # Wellness App
 
-Personal project. A Fultter application for breathing exercises and other wellness activities.
+-- IN PROGRESS --
+
+Personal project. A Flutter application for breathing exercises and other wellness activities.
 
 ## Getting Started
 
