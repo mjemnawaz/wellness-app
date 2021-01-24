@@ -24,12 +24,10 @@ class Theme {
   }
 
   Color getTopBG(){
-    debugPrint("getTopBG()");
     return THEME_MAP[themeIdentifier][0];
   }
 
   Color getBotBG(){
-    debugPrint("getBotBG()");
     return THEME_MAP[themeIdentifier][1];
   }
 }

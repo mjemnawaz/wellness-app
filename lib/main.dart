@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'theme/theme.dart' as __theme;
 
@@ -40,11 +41,28 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: GestureDetector(
         child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                decoration: const BoxDecoration(
+                  border: Border(
+                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFFFF)),
+                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFFFF)),
+                    right: BorderSide(width: 1.0, color: Color(0xFFFFFFFFFF)),
+                    bottom: BorderSide(width: 1.0, color: Color(0xFFFFFFFFFF)),
+                  )
+                ),
+                child: Image(
+                  image: AssetImage('assets/mountainrange.png'),
+                  width: 350,
+                ),
+              ),
+            ],
+          ),
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
